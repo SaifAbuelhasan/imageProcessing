@@ -10,6 +10,6 @@ routes.get('/', (req, res) => {
 });
 
 // use api/image for image routes
-routes.use('/image', image);
+routes.use('/images', image);
 
 export default routes;

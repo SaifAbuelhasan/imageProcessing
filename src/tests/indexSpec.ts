@@ -4,7 +4,7 @@ import request from 'supertest';
 // test image routes
 describe('image routes tests', () => {
 	it('should return a 200 response', async () => {
-		const res = await request(index).get('/api/image');
+		const res = await request(index).get('/api/images');
 		expect(res.status).toBe(200);
 	});
 });
