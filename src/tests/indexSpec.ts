@@ -23,4 +23,11 @@ describe('Test image resize', () => {
 		);
 		expect(res.status).toBe(400);
 	});
+
+	it('invalid width or height', async () => {
+		const res = await request(index).get(
+			'/api/images?filename=fjord&width=100&height=test'
+		);
+		expect(res.status).toBe(400);
+	});
 });
